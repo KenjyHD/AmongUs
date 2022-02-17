@@ -1,0 +1,59 @@
+Task 1
+Am alocat un string auxiliar in care sa memorez fiecare element al matricei.
+Dupa ce obtin un element al matricei il concatenez stringului s care 
+reprezinta matricea rotata. La final am dealocat memoria pt stringul
+auxiliar s1.
+
+Task 2
+Am parcurs sirul de caractere primit si am memorat fiecare numar 
+intru-un string aux pe care l-am convertit in integer, am calculat suma
+curenta.Am zerografiat stringul aux de fiecare data cand gaseam caracterul
+'_'. La final am convertit suma in stringul res si l-am returnat.
+Am dealocat stringul aux.
+
+Task3
+Am luat vectorul si daca primul element(care reprezinta numarul de elemente
+al vectorului) este impar atunci am parcurs vectorul de la cap la coada si am
+memorat elementele in stringul aux, altfel parcurg vectorul incepand cu al
+2-lea element si am schimbat cu locul elementele de pe locuri impare cu 
+elementul imediat urmator(am memorat elementele in stringul aux si le-am
+concatenat in ordinea necesara). Rezultatul a fost treptat concatenat in 
+stringul res si l-am returnat. Deasemenea am dealocat aux.
+
+Task4
+Am alocat fiecare element al structurii comform cerintei si am returnat 
+structura respectiva.
+
+Task5
+Am alocat o structura joc, dupa care am citit si am alocat treptat fiecare
+element al acestei structuri. Pentru fiecare crewmate  si am apelat ReadPlayer
+unde i-am alocat spatiul necesar, respectiv spatiul pt structura si fiecare element
+al ei in parte. Pentru locatii am folosit un ciclu care parcurge toate 
+stringurile de locatie si din acestea scoate x-ul si y-ul pentru structura 
+Location. Pentru rol am controlat prin 4 if-uri care este rolul si am atribuit
+variabilei playerRole valoarea respectiva rolului. In dependenta de playerRole 
+am atribuit referinta ability la valoarea respectiva din vectorul de referinte
+Abilities.
+
+Task6
+Am afisat pe rand fiecare element al structurii Game si pt fiecare jucator
+am apelat functia WritePlayer care afiseaza in fisier toate informatiile 
+necasare in dependenta de rol. Deasemenea la final am apelat inca o data
+WritePlayer pentru impostor.
+
+Task7
+Am parcurs toti jucatorii(Crewmates) pentru a calcula distanta intre fiecare
+din ei si impostor. Indexul de la locations variaza in dependenta de numarul
+ciclului de joc. Distanta minima este gasita dupa parcurgere, memorand 
+indexul jucatorului respectiv, si daca ea 
+este mai mica de killRange atunci variabila alive al jucatorului respectiv devine
+0 iar la ecran se afiseaza mesajul respectiv, daca nu se gaseste un jucator 
+ce poate fi omorat atunci doar se afiseaza mesajul de esec.
+
+Task8
+La fiecare apelare a functiei incrementam variabila care tine cont de numarul
+ciclului de joc. Variabilele j si k asigurau ciclicitatea miscarilor 
+jucatorilor de la o locatie la alta. Am parcurs fiecare crewmate in parte
+si daca acestia sunt inca vii atunci afisam miscarea lor si outputul respectiv
+de la task in dependenta de rol, altfel afisam ca jucatorul e mort. Dupa am 
+facut la fel pt impostor: am afisat miscarea lui si dupa outputul.
